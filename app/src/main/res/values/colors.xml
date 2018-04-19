@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="colorPrimary">#3F51B5</color>
+	<color name="colorPrimaryDark">#303F9F</color>
+	<color name="colorAccent">#FF4081</color>
+
+	<color name="redRobot">#DC4B24</color>
+	<color name="redRobotPath">#F3A499</color>
+	<color name="blueRobot">#2970D7</color>
+	<color name="blueRobotPath">#8DB8F9</color>
+	<color name="emptyCell">#B9B9B9</color>
+</resources>

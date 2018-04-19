@@ -1,0 +1,98 @@
+<android.support.v4.widget.DrawerLayout
+	android:id="@+id/drawer_layout"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	tools:context="miguel.tallyrobots.ui.MainActivity"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fitsSystemWindows="true"
+	tools:openDrawer="right">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		>
+
+		<android.support.v7.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="?attr/colorPrimary"
+			android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+			android:elevation="4dp"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:paddingTop="16dp"
+			android:paddingRight="16dp"
+			android:paddingLeft="16dp"
+			>
+
+			<View
+				android:id="@+id/red_circle"
+				android:layout_width="14dp"
+				android:layout_height="14dp"
+				android:layout_gravity="center_vertical"
+				android:background="@color/redRobot"
+				/>
+
+			<TextView
+				android:id="@+id/tv_red_robot_score"
+				style="@style/TextAppearance.AppCompat.Body2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="8dp"
+				tools:text="0"
+				/>
+
+			<android.support.v4.widget.Space
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"/>
+
+			<View
+				android:id="@+id/blue_circle"
+				android:layout_width="14dp"
+				android:layout_height="14dp"
+				android:layout_gravity="center_vertical"
+				android:background="@color/blueRobot"
+				/>
+
+			<TextView
+				android:id="@+id/tv_blue_robot_score"
+				style="@style/TextAppearance.AppCompat.Body2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="8dp"
+				tools:text="0"
+				/>
+		</LinearLayout>
+
+		<miguel.tallyrobots.ui.GridView
+			android:id="@+id/grid_view"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_margin="16dp"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/tv_red_robot_score"
+			/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/nav_view"
+		android:layout_width="300dp"
+		android:layout_height="match_parent"
+		android:layout_gravity="right"
+		android:fitsSystemWindows="true"
+		android:background="#fff"
+		android:orientation="vertical">
+
+	</LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
